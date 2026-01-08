@@ -17,7 +17,7 @@ torch.manual_seed(42)
 #scheme = orion.init_scheme("../configs/resnet.yml")
 scheme = orion.init_scheme(sys.argv[1])
 trainloader, testloader = get_cifar_datasets(data_dir="../data", batch_size=1,test_samples=1000, seed=42)
-net = models.ResNet20()
+net = models.SiLUResNet20()
 if(len(sys.argv) >2):
     checkpoint = torch.load(sys.argv[2], map_location=torch.device('cpu'),weights_only=True)  # or 'cuda'
     net.load_state_dict(checkpoint["model_state_dict"])
