@@ -45,7 +45,7 @@ orion.fit(net, inp)
 input_level = orion.compile(net)
 
 out_clear = net(inp)
-orion.propagate(net,inp)
+# orion.propagate(net,inp)
 # Encode and encrypt the input vector 
 vec_ptxt = orion.encode(inp, input_level)
 vec_ctxt = orion.encrypt(vec_ptxt)
