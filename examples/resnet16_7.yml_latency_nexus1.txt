@@ -1,0 +1,346 @@
+
+{1} Finding per-layer input/output ranges and shapes...
+
+{2} Fitting polynomials... P[0]
+Interval: [-1.000244140625, -0.015625000000] U [0.015625000000, 1.000244140625]
+Iteration:  0 - 36.671126371208
+Iteration:  1 - 1.604349827010
+Iteration:  2 - 0.067677182132
+Iteration:  3 - 0.000321111968
+MaxErr: 0.684720677007
+MinErr: 0.684500875584
+
+P[1]
+Interval: [-1.684964817632, -0.315254983791] U [0.315254983791, 1.684964817632]
+Iteration:  0 - 8.034689724788
+Iteration:  1 - 0.442923966627
+Iteration:  2 - 0.012446506932
+MaxErr: 0.024674913543
+MinErr: 0.024371572596
+
+P[2]
+Interval: [-1.024919054168, -0.975384286779] U [0.975384286779, 1.024919054168]
+Iteration:  0 - 1.787299755635
+Iteration:  1 - 0.214497956718
+Iteration:  2 - 0.002337390027
+MaxErr: 0.000000000000
+MinErr: 0.000000000000
+
+Output Precision: -76.440964
+
+done! [2.404 secs.]
+
+{3} Generating matrix diagonals...
+
+Packing conv1:
+├── embed method: hybrid
+├── original matrix shape: (16384, 3072)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (16384, 32768)
+├── # output rotations: 1
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.26it/s, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 0.79
+├── # diagonals = 144
+
+Packing layers_0_0_conv1:
+├── embed method: hybrid
+├── original matrix shape: (16384, 16384)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (16384, 32768)
+├── # output rotations: 1
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:01<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:01<00:00,  1.04s/it, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 1.04
+├── # diagonals = 144
+
+Packing layers_0_0_conv2:
+├── embed method: hybrid
+├── original matrix shape: (16384, 16384)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (16384, 32768)
+├── # output rotations: 1
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:01<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:01<00:00,  1.04s/it, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 1.04
+├── # diagonals = 144
+
+Packing layers_0_1_conv1:
+├── embed method: hybrid
+├── original matrix shape: (16384, 16384)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (16384, 32768)
+├── # output rotations: 1
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:01<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:01<00:00,  1.03s/it, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 1.03
+├── # diagonals = 144
+
+Packing layers_0_1_conv2:
+├── embed method: hybrid
+├── original matrix shape: (16384, 16384)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (16384, 32768)
+├── # output rotations: 1
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:01<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:01<00:00,  1.02s/it, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 1.02
+├── # diagonals = 144
+
+Packing layers_0_2_conv1:
+├── embed method: hybrid
+├── original matrix shape: (16384, 16384)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (16384, 32768)
+├── # output rotations: 1
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:01<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:01<00:00,  1.01s/it, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 1.01
+├── # diagonals = 144
+
+Packing layers_0_2_conv2:
+├── embed method: hybrid
+├── original matrix shape: (16384, 16384)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (16384, 32768)
+├── # output rotations: 1
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:01<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:01<00:00,  1.01s/it, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 1.01
+├── # diagonals = 144
+
+Packing layers_1_0_conv1:
+├── embed method: hybrid
+├── original matrix shape: (8192, 16384)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (8192, 32768)
+├── # output rotations: 2
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=128]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.84it/s, Current Block=(0,0), Total Diagonals=128]                                                                                                               ├── time to pack (s): 0.54
+├── # diagonals = 128
+
+Packing layers_1_0_shortcut_0:
+├── embed method: hybrid
+├── original matrix shape: (8192, 16384)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (8192, 32768)
+├── # output rotations: 2
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=32]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s, Current Block=(0,0), Total Diagonals=32]                                                                                                              ├── time to pack (s): 0.49
+├── # diagonals = 32
+
+Packing layers_1_0_conv2:
+├── embed method: hybrid
+├── original matrix shape: (8192, 8192)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (8192, 32768)
+├── # output rotations: 2
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=392]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.67it/s, Current Block=(0,0), Total Diagonals=392]                                                                                                               ├── time to pack (s): 0.60
+├── # diagonals = 392
+
+Packing layers_1_1_conv1:
+├── embed method: hybrid
+├── original matrix shape: (8192, 8192)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (8192, 32768)
+├── # output rotations: 2
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=392]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.67it/s, Current Block=(0,0), Total Diagonals=392]                                                                                                               ├── time to pack (s): 0.60
+├── # diagonals = 392
+
+Packing layers_1_1_conv2:
+├── embed method: hybrid
+├── original matrix shape: (8192, 8192)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (8192, 32768)
+├── # output rotations: 2
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=392]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.68it/s, Current Block=(0,0), Total Diagonals=392]                                                                                                               ├── time to pack (s): 0.60
+├── # diagonals = 392
+
+Packing layers_1_2_conv1:
+├── embed method: hybrid
+├── original matrix shape: (8192, 8192)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (8192, 32768)
+├── # output rotations: 2
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=392]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.67it/s, Current Block=(0,0), Total Diagonals=392]                                                                                                               ├── time to pack (s): 0.60
+├── # diagonals = 392
+
+Packing layers_1_2_conv2:
+├── embed method: hybrid
+├── original matrix shape: (8192, 8192)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (8192, 32768)
+├── # output rotations: 2
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=392]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.60it/s, Current Block=(0,0), Total Diagonals=392]                                                                                                               ├── time to pack (s): 0.62
+├── # diagonals = 392
+
+Packing layers_2_0_conv1:
+├── embed method: hybrid
+├── original matrix shape: (4096, 8192)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (4096, 32768)
+├── # output rotations: 3
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=324]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  2.71it/s, Current Block=(0,0), Total Diagonals=324]                                                                                                               ├── time to pack (s): 0.37
+├── # diagonals = 324
+
+Packing layers_2_0_shortcut_0:
+├── embed method: hybrid
+├── original matrix shape: (4096, 8192)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (4096, 32768)
+├── # output rotations: 3
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=100]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  3.80it/s, Current Block=(0,0), Total Diagonals=100]                                                                                                               ├── time to pack (s): 0.26
+├── # diagonals = 100
+
+Packing layers_2_0_conv2:
+├── embed method: hybrid
+├── original matrix shape: (4096, 4096)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (4096, 32768)
+├── # output rotations: 3
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=900]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.40it/s, Current Block=(0,0), Total Diagonals=900]                                                                                                               ├── time to pack (s): 0.71
+├── # diagonals = 900
+
+Packing layers_2_1_conv1:
+├── embed method: hybrid
+├── original matrix shape: (4096, 4096)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (4096, 32768)
+├── # output rotations: 3
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=900]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.40it/s, Current Block=(0,0), Total Diagonals=900]                                                                                                               ├── time to pack (s): 0.72
+├── # diagonals = 900
+
+Packing layers_2_1_conv2:
+├── embed method: hybrid
+├── original matrix shape: (4096, 4096)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (4096, 32768)
+├── # output rotations: 3
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=900]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.40it/s, Current Block=(0,0), Total Diagonals=900]                                                                                                               ├── time to pack (s): 0.72
+├── # diagonals = 900
+
+Packing layers_2_2_conv1:
+├── embed method: hybrid
+├── original matrix shape: (4096, 4096)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (4096, 32768)
+├── # output rotations: 3
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=900]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.41it/s, Current Block=(0,0), Total Diagonals=900]                                                                                                               ├── time to pack (s): 0.71
+├── # diagonals = 900
+
+Packing layers_2_2_conv2:
+├── embed method: hybrid
+├── original matrix shape: (4096, 4096)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (4096, 32768)
+├── # output rotations: 3
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=900]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.42it/s, Current Block=(0,0), Total Diagonals=900]                                                                                                               ├── time to pack (s): 0.70
+├── # diagonals = 900
+
+Packing avgpool:
+├── embed method: hybrid
+├── original matrix shape: (1024, 4096)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (1024, 32768)
+├── # output rotations: 5
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=256]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  5.93it/s, Current Block=(0,0), Total Diagonals=256]                                                                                                               ├── time to pack (s): 0.17
+├── # diagonals = 256
+
+Packing linear:
+├── embed method: hybrid
+├── original matrix shape: (10, 1024)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (32768, 32768)
+├── # output rotations: 0
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:01<?, ?it/s, Current Block=(0,0), Total Diagonals=73]|    Processing blocks: 100%|██████████| 1/1 [00:01<00:00,  1.36s/it, Current Block=(0,0), Total Diagonals=73]                                                                                                              ├── time to pack (s): 1.36
+├── # diagonals = 73
+
+{4} Running bootstrap placement... done! [0.465 secs.]
+├── Network requires 57 bootstrap operations.
+├── Generating bootstrappers for logslots = 14, 13, 12 ... done! [81.421 secs.]
+
+{5} Compiling network layers...
+├── conv1 @ level=7
+├── act_mult1 @ level=6
+├── act_sign_acts_0 @ level=5
+├── act_sign_acts_1 @ level=5
+├── act_sign_acts_2 @ level=7
+├── act_mult2 @ level=2
+├── layers_0_0_conv1 @ level=7
+├── layers_0_0_act1_mult1 @ level=6
+├── layers_0_0_act1_sign_acts_0 @ level=5
+├── layers_0_0_act1_sign_acts_1 @ level=5
+├── layers_0_0_act1_sign_acts_2 @ level=7
+├── layers_0_0_act1_mult2 @ level=2
+├── layers_0_0_conv2 @ level=7
+├── layers_0_0_add @ level=6
+├── layers_0_0_act2_mult1 @ level=6
+├── layers_0_0_act2_sign_acts_0 @ level=5
+├── layers_0_0_act2_sign_acts_1 @ level=5
+├── layers_0_0_act2_sign_acts_2 @ level=7
+├── layers_0_0_act2_mult2 @ level=2
+├── layers_0_1_conv1 @ level=7
+├── layers_0_1_act1_mult1 @ level=6
+├── layers_0_1_act1_sign_acts_0 @ level=5
+├── layers_0_1_act1_sign_acts_1 @ level=5
+├── layers_0_1_act1_sign_acts_2 @ level=7
+├── layers_0_1_act1_mult2 @ level=2
+├── layers_0_1_conv2 @ level=7
+├── layers_0_1_add @ level=6
+├── layers_0_1_act2_mult1 @ level=6
+├── layers_0_1_act2_sign_acts_0 @ level=5
+├── layers_0_1_act2_sign_acts_1 @ level=5
+├── layers_0_1_act2_sign_acts_2 @ level=7
+├── layers_0_1_act2_mult2 @ level=2
+├── layers_0_2_conv1 @ level=7
+├── layers_0_2_act1_mult1 @ level=6
+├── layers_0_2_act1_sign_acts_0 @ level=5
+├── layers_0_2_act1_sign_acts_1 @ level=5
+├── layers_0_2_act1_sign_acts_2 @ level=7
+├── layers_0_2_act1_mult2 @ level=2
+├── layers_0_2_conv2 @ level=7
+├── layers_0_2_add @ level=6
+├── layers_0_2_act2_mult1 @ level=6
+├── layers_0_2_act2_sign_acts_0 @ level=5
+├── layers_0_2_act2_sign_acts_1 @ level=5
+├── layers_0_2_act2_sign_acts_2 @ level=7
+├── layers_0_2_act2_mult2 @ level=2
+├── layers_1_0_conv1 @ level=7
+├── layers_1_0_shortcut_0 @ level=7
+├── layers_1_0_act1_mult1 @ level=6
+├── layers_1_0_act1_sign_acts_0 @ level=5
+├── layers_1_0_act1_sign_acts_1 @ level=5
+├── layers_1_0_act1_sign_acts_2 @ level=7
+├── layers_1_0_act1_mult2 @ level=2
+├── layers_1_0_conv2 @ level=7
+├── layers_1_0_add @ level=6
+├── layers_1_0_act2_mult1 @ level=6
+├── layers_1_0_act2_sign_acts_0 @ level=5
+├── layers_1_0_act2_sign_acts_1 @ level=5
+├── layers_1_0_act2_sign_acts_2 @ level=7
+├── layers_1_0_act2_mult2 @ level=2
+├── layers_1_1_conv1 @ level=7
+├── layers_1_1_act1_mult1 @ level=6
+├── layers_1_1_act1_sign_acts_0 @ level=5
+├── layers_1_1_act1_sign_acts_1 @ level=5
+├── layers_1_1_act1_sign_acts_2 @ level=7
+├── layers_1_1_act1_mult2 @ level=2
+├── layers_1_1_conv2 @ level=7
+├── layers_1_1_add @ level=6
+├── layers_1_1_act2_mult1 @ level=6
+├── layers_1_1_act2_sign_acts_0 @ level=5
+├── layers_1_1_act2_sign_acts_1 @ level=5
+├── layers_1_1_act2_sign_acts_2 @ level=7
+├── layers_1_1_act2_mult2 @ level=2
+├── layers_1_2_conv1 @ level=7
+├── layers_1_2_act1_mult1 @ level=6
+├── layers_1_2_act1_sign_acts_0 @ level=5
+├── layers_1_2_act1_sign_acts_1 @ level=5
+├── layers_1_2_act1_sign_acts_2 @ level=7
+├── layers_1_2_act1_mult2 @ level=2
+├── layers_1_2_conv2 @ level=7
+├── layers_1_2_add @ level=6
+├── layers_1_2_act2_mult1 @ level=6
+├── layers_1_2_act2_sign_acts_0 @ level=5
+├── layers_1_2_act2_sign_acts_1 @ level=5
+├── layers_1_2_act2_sign_acts_2 @ level=7
+├── layers_1_2_act2_mult2 @ level=2
+├── layers_2_0_conv1 @ level=7
+├── layers_2_0_shortcut_0 @ level=7
+├── layers_2_0_act1_mult1 @ level=6
+├── layers_2_0_act1_sign_acts_0 @ level=5
+├── layers_2_0_act1_sign_acts_1 @ level=5
+├── layers_2_0_act1_sign_acts_2 @ level=7
+├── layers_2_0_act1_mult2 @ level=2
+├── layers_2_0_conv2 @ level=7
+├── layers_2_0_add @ level=6
+├── layers_2_0_act2_mult1 @ level=6
+├── layers_2_0_act2_sign_acts_0 @ level=5
+├── layers_2_0_act2_sign_acts_1 @ level=5
+├── layers_2_0_act2_sign_acts_2 @ level=7
+├── layers_2_0_act2_mult2 @ level=2
+├── layers_2_1_conv1 @ level=7

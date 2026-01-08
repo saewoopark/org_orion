@@ -28,7 +28,7 @@ MinErr: 0.000000000000
 
 Output Precision: -76.440964
 
-done! [2.840 secs.]
+done! [2.900 secs.]
 
 {3} Generating matrix diagonals...
 
@@ -36,337 +36,337 @@ Packing conv1:
 ├── embed method: hybrid
 ├── original matrix shape: (16384, 3072)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (16384, 16384)
-├── # output rotations: 0
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  2.19it/s, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 0.46
+├── resized matrix shape: (16384, 32768)
+├── # output rotations: 1
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.26it/s, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 0.80
 ├── # diagonals = 144
 
 Packing layers_0_0_conv1:
 ├── embed method: hybrid
 ├── original matrix shape: (16384, 16384)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (16384, 16384)
-├── # output rotations: 0
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.48it/s, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 0.68
+├── resized matrix shape: (16384, 32768)
+├── # output rotations: 1
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:01<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:01<00:00,  1.04s/it, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 1.04
 ├── # diagonals = 144
 
 Packing layers_0_0_conv2:
 ├── embed method: hybrid
 ├── original matrix shape: (16384, 16384)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (16384, 16384)
-├── # output rotations: 0
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.48it/s, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 0.67
+├── resized matrix shape: (16384, 32768)
+├── # output rotations: 1
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:01<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:01<00:00,  1.17s/it, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 1.17
 ├── # diagonals = 144
 
 Packing layers_0_1_conv1:
 ├── embed method: hybrid
 ├── original matrix shape: (16384, 16384)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (16384, 16384)
-├── # output rotations: 0
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.48it/s, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 0.67
+├── resized matrix shape: (16384, 32768)
+├── # output rotations: 1
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:01<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:01<00:00,  1.05s/it, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 1.05
 ├── # diagonals = 144
 
 Packing layers_0_1_conv2:
 ├── embed method: hybrid
 ├── original matrix shape: (16384, 16384)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (16384, 16384)
-├── # output rotations: 0
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.49it/s, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 0.67
+├── resized matrix shape: (16384, 32768)
+├── # output rotations: 1
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:01<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:01<00:00,  1.06s/it, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 1.06
 ├── # diagonals = 144
 
 Packing layers_0_2_conv1:
 ├── embed method: hybrid
 ├── original matrix shape: (16384, 16384)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (16384, 16384)
-├── # output rotations: 0
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.49it/s, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 0.67
+├── resized matrix shape: (16384, 32768)
+├── # output rotations: 1
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:01<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:01<00:00,  1.01s/it, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 1.01
 ├── # diagonals = 144
 
 Packing layers_0_2_conv2:
 ├── embed method: hybrid
 ├── original matrix shape: (16384, 16384)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (16384, 16384)
-├── # output rotations: 0
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.50it/s, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 0.67
+├── resized matrix shape: (16384, 32768)
+├── # output rotations: 1
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:01<?, ?it/s, Current Block=(0,0), Total Diagonals=144]|    Processing blocks: 100%|██████████| 1/1 [00:01<00:00,  1.00s/it, Current Block=(0,0), Total Diagonals=144]                                                                                                               ├── time to pack (s): 1.00
 ├── # diagonals = 144
 
 Packing layers_1_0_conv1:
 ├── embed method: hybrid
 ├── original matrix shape: (8192, 16384)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (8192, 16384)
-├── # output rotations: 1
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=128]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  2.85it/s, Current Block=(0,0), Total Diagonals=128]                                                                                                               ├── time to pack (s): 0.35
+├── resized matrix shape: (8192, 32768)
+├── # output rotations: 2
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=128]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.88it/s, Current Block=(0,0), Total Diagonals=128]                                                                                                               ├── time to pack (s): 0.53
 ├── # diagonals = 128
 
 Packing layers_1_0_shortcut_0:
 ├── embed method: hybrid
 ├── original matrix shape: (8192, 16384)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (8192, 16384)
-├── # output rotations: 1
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=32]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  3.06it/s, Current Block=(0,0), Total Diagonals=32]                                                                                                              ├── time to pack (s): 0.33
+├── resized matrix shape: (8192, 32768)
+├── # output rotations: 2
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=32]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s, Current Block=(0,0), Total Diagonals=32]                                                                                                              ├── time to pack (s): 0.48
 ├── # diagonals = 32
 
 Packing layers_1_0_conv2:
 ├── embed method: hybrid
 ├── original matrix shape: (8192, 8192)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (8192, 16384)
-├── # output rotations: 1
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=392]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  2.73it/s, Current Block=(0,0), Total Diagonals=392]                                                                                                               ├── time to pack (s): 0.37
+├── resized matrix shape: (8192, 32768)
+├── # output rotations: 2
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=392]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.68it/s, Current Block=(0,0), Total Diagonals=392]                                                                                                               ├── time to pack (s): 0.60
 ├── # diagonals = 392
 
 Packing layers_1_1_conv1:
 ├── embed method: hybrid
 ├── original matrix shape: (8192, 8192)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (8192, 16384)
-├── # output rotations: 1
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=392]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  2.92it/s, Current Block=(0,0), Total Diagonals=392]                                                                                                               ├── time to pack (s): 0.34
+├── resized matrix shape: (8192, 32768)
+├── # output rotations: 2
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=392]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.68it/s, Current Block=(0,0), Total Diagonals=392]                                                                                                               ├── time to pack (s): 0.60
 ├── # diagonals = 392
 
 Packing layers_1_1_conv2:
 ├── embed method: hybrid
 ├── original matrix shape: (8192, 8192)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (8192, 16384)
-├── # output rotations: 1
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=392]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  2.92it/s, Current Block=(0,0), Total Diagonals=392]                                                                                                               ├── time to pack (s): 0.34
+├── resized matrix shape: (8192, 32768)
+├── # output rotations: 2
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=392]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.68it/s, Current Block=(0,0), Total Diagonals=392]                                                                                                               ├── time to pack (s): 0.59
 ├── # diagonals = 392
 
 Packing layers_1_2_conv1:
 ├── embed method: hybrid
 ├── original matrix shape: (8192, 8192)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (8192, 16384)
-├── # output rotations: 1
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=392]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  2.93it/s, Current Block=(0,0), Total Diagonals=392]                                                                                                               ├── time to pack (s): 0.34
+├── resized matrix shape: (8192, 32768)
+├── # output rotations: 2
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=392]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.67it/s, Current Block=(0,0), Total Diagonals=392]                                                                                                               ├── time to pack (s): 0.60
 ├── # diagonals = 392
 
 Packing layers_1_2_conv2:
 ├── embed method: hybrid
 ├── original matrix shape: (8192, 8192)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (8192, 16384)
-├── # output rotations: 1
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=392]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  2.89it/s, Current Block=(0,0), Total Diagonals=392]                                                                                                               ├── time to pack (s): 0.35
+├── resized matrix shape: (8192, 32768)
+├── # output rotations: 2
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=392]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.68it/s, Current Block=(0,0), Total Diagonals=392]                                                                                                               ├── time to pack (s): 0.60
 ├── # diagonals = 392
 
 Packing layers_2_0_conv1:
 ├── embed method: hybrid
 ├── original matrix shape: (4096, 8192)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (4096, 16384)
-├── # output rotations: 2
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=324]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  4.76it/s, Current Block=(0,0), Total Diagonals=324]                                                                                                               ├── time to pack (s): 0.21
+├── resized matrix shape: (4096, 32768)
+├── # output rotations: 3
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=324]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  2.73it/s, Current Block=(0,0), Total Diagonals=324]                                                                                                               ├── time to pack (s): 0.37
 ├── # diagonals = 324
 
 Packing layers_2_0_shortcut_0:
 ├── embed method: hybrid
 ├── original matrix shape: (4096, 8192)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (4096, 16384)
-├── # output rotations: 2
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=100]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  6.73it/s, Current Block=(0,0), Total Diagonals=100]                                                                                                               ├── time to pack (s): 0.15
+├── resized matrix shape: (4096, 32768)
+├── # output rotations: 3
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=100]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  3.93it/s, Current Block=(0,0), Total Diagonals=100]                                                                                                               ├── time to pack (s): 0.25
 ├── # diagonals = 100
 
 Packing layers_2_0_conv2:
 ├── embed method: hybrid
 ├── original matrix shape: (4096, 4096)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (4096, 16384)
-├── # output rotations: 2
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=900]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  2.61it/s, Current Block=(0,0), Total Diagonals=900]                                                                                                               ├── time to pack (s): 0.38
+├── resized matrix shape: (4096, 32768)
+├── # output rotations: 3
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=900]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.41it/s, Current Block=(0,0), Total Diagonals=900]                                                                                                               ├── time to pack (s): 0.71
 ├── # diagonals = 900
 
 Packing layers_2_1_conv1:
 ├── embed method: hybrid
 ├── original matrix shape: (4096, 4096)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (4096, 16384)
-├── # output rotations: 2
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=900]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  2.61it/s, Current Block=(0,0), Total Diagonals=900]                                                                                                               ├── time to pack (s): 0.38
+├── resized matrix shape: (4096, 32768)
+├── # output rotations: 3
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=900]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.42it/s, Current Block=(0,0), Total Diagonals=900]                                                                                                               ├── time to pack (s): 0.71
 ├── # diagonals = 900
 
 Packing layers_2_1_conv2:
 ├── embed method: hybrid
 ├── original matrix shape: (4096, 4096)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (4096, 16384)
-├── # output rotations: 2
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=900]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  2.60it/s, Current Block=(0,0), Total Diagonals=900]                                                                                                               ├── time to pack (s): 0.38
+├── resized matrix shape: (4096, 32768)
+├── # output rotations: 3
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=900]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.42it/s, Current Block=(0,0), Total Diagonals=900]                                                                                                               ├── time to pack (s): 0.70
 ├── # diagonals = 900
 
 Packing layers_2_2_conv1:
 ├── embed method: hybrid
 ├── original matrix shape: (4096, 4096)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (4096, 16384)
-├── # output rotations: 2
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=900]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  2.62it/s, Current Block=(0,0), Total Diagonals=900]                                                                                                               ├── time to pack (s): 0.38
+├── resized matrix shape: (4096, 32768)
+├── # output rotations: 3
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=900]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.42it/s, Current Block=(0,0), Total Diagonals=900]                                                                                                               ├── time to pack (s): 0.70
 ├── # diagonals = 900
 
 Packing layers_2_2_conv2:
 ├── embed method: hybrid
 ├── original matrix shape: (4096, 4096)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (4096, 16384)
-├── # output rotations: 2
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=900]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  2.59it/s, Current Block=(0,0), Total Diagonals=900]                                                                                                               ├── time to pack (s): 0.39
+├── resized matrix shape: (4096, 32768)
+├── # output rotations: 3
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=900]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  1.41it/s, Current Block=(0,0), Total Diagonals=900]                                                                                                               ├── time to pack (s): 0.71
 ├── # diagonals = 900
 
 Packing avgpool:
 ├── embed method: hybrid
 ├── original matrix shape: (1024, 4096)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (1024, 16384)
-├── # output rotations: 4
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=256]                                                                                                       ├── time to pack (s): 0.09
+├── resized matrix shape: (1024, 32768)
+├── # output rotations: 5
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=256]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  6.05it/s, Current Block=(0,0), Total Diagonals=256]                                                                                                               ├── time to pack (s): 0.17
 ├── # diagonals = 256
 
 Packing linear:
 ├── embed method: hybrid
 ├── original matrix shape: (10, 1024)
 ├── # blocks (rows, cols) = (1, 1)
-├── resized matrix shape: (16384, 16384)
+├── resized matrix shape: (32768, 32768)
 ├── # output rotations: 0
-|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s, Current Block=(0,0), Total Diagonals=73]|    Processing blocks: 100%|██████████| 1/1 [00:00<00:00,  2.77it/s, Current Block=(0,0), Total Diagonals=73]                                                                                                              ├── time to pack (s): 0.36
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]|    Processing blocks:   0%|          | 0/1 [00:01<?, ?it/s, Current Block=(0,0), Total Diagonals=73]|    Processing blocks: 100%|██████████| 1/1 [00:01<00:00,  1.35s/it, Current Block=(0,0), Total Diagonals=73]                                                                                                              ├── time to pack (s): 1.35
 ├── # diagonals = 73
 
-{4} Running bootstrap placement... done! [4.351 secs.]
-├── Network requires 27 bootstrap operations.
-├── Generating bootstrappers for logslots = 14, 13, 12 ... done! [58.482 secs.]
+{4} Running bootstrap placement... done! [1.044 secs.]
+├── Network requires 38 bootstrap operations.
+├── Generating bootstrappers for logslots = 14, 13, 12 ... done! [104.030 secs.]
 
 {5} Compiling network layers...
-├── conv1 @ level=11
-├── act_mult1 @ level=10
+├── conv1 @ level=3
+├── act_mult1 @ level=2
 ├── act_sign_acts_0 @ level=9
 ├── act_sign_acts_1 @ level=5
-├── act_sign_acts_2 @ level=13
-├── act_mult2 @ level=8
-├── layers_0_0_conv1 @ level=7
-├── layers_0_0_act1_mult1 @ level=6
-├── layers_0_0_act1_sign_acts_0 @ level=5
-├── layers_0_0_act1_sign_acts_1 @ level=12
-├── layers_0_0_act1_sign_acts_2 @ level=8
-├── layers_0_0_act1_mult2 @ level=3
-├── layers_0_0_conv2 @ level=2
-├── layers_0_0_add @ level=1
-├── layers_0_0_act2_mult1 @ level=10
+├── act_sign_acts_2 @ level=9
+├── act_mult2 @ level=4
+├── layers_0_0_conv1 @ level=3
+├── layers_0_0_act1_mult1 @ level=2
+├── layers_0_0_act1_sign_acts_0 @ level=9
+├── layers_0_0_act1_sign_acts_1 @ level=5
+├── layers_0_0_act1_sign_acts_2 @ level=9
+├── layers_0_0_act1_mult2 @ level=4
+├── layers_0_0_conv2 @ level=3
+├── layers_0_0_add @ level=2
+├── layers_0_0_act2_mult1 @ level=2
 ├── layers_0_0_act2_sign_acts_0 @ level=9
 ├── layers_0_0_act2_sign_acts_1 @ level=5
-├── layers_0_0_act2_sign_acts_2 @ level=13
-├── layers_0_0_act2_mult2 @ level=8
-├── layers_0_1_conv1 @ level=7
-├── layers_0_1_act1_mult1 @ level=6
-├── layers_0_1_act1_sign_acts_0 @ level=5
-├── layers_0_1_act1_sign_acts_1 @ level=12
-├── layers_0_1_act1_sign_acts_2 @ level=8
-├── layers_0_1_act1_mult2 @ level=3
-├── layers_0_1_conv2 @ level=2
-├── layers_0_1_add @ level=1
-├── layers_0_1_act2_mult1 @ level=10
+├── layers_0_0_act2_sign_acts_2 @ level=9
+├── layers_0_0_act2_mult2 @ level=4
+├── layers_0_1_conv1 @ level=3
+├── layers_0_1_act1_mult1 @ level=2
+├── layers_0_1_act1_sign_acts_0 @ level=9
+├── layers_0_1_act1_sign_acts_1 @ level=5
+├── layers_0_1_act1_sign_acts_2 @ level=9
+├── layers_0_1_act1_mult2 @ level=4
+├── layers_0_1_conv2 @ level=3
+├── layers_0_1_add @ level=2
+├── layers_0_1_act2_mult1 @ level=2
 ├── layers_0_1_act2_sign_acts_0 @ level=9
 ├── layers_0_1_act2_sign_acts_1 @ level=5
-├── layers_0_1_act2_sign_acts_2 @ level=13
-├── layers_0_1_act2_mult2 @ level=8
-├── layers_0_2_conv1 @ level=7
-├── layers_0_2_act1_mult1 @ level=6
-├── layers_0_2_act1_sign_acts_0 @ level=5
-├── layers_0_2_act1_sign_acts_1 @ level=12
-├── layers_0_2_act1_sign_acts_2 @ level=8
-├── layers_0_2_act1_mult2 @ level=3
-├── layers_0_2_conv2 @ level=2
-├── layers_0_2_add @ level=1
-├── layers_0_2_act2_mult1 @ level=10
+├── layers_0_1_act2_sign_acts_2 @ level=9
+├── layers_0_1_act2_mult2 @ level=4
+├── layers_0_2_conv1 @ level=3
+├── layers_0_2_act1_mult1 @ level=2
+├── layers_0_2_act1_sign_acts_0 @ level=9
+├── layers_0_2_act1_sign_acts_1 @ level=5
+├── layers_0_2_act1_sign_acts_2 @ level=9
+├── layers_0_2_act1_mult2 @ level=4
+├── layers_0_2_conv2 @ level=3
+├── layers_0_2_add @ level=2
+├── layers_0_2_act2_mult1 @ level=2
 ├── layers_0_2_act2_sign_acts_0 @ level=9
 ├── layers_0_2_act2_sign_acts_1 @ level=5
-├── layers_0_2_act2_sign_acts_2 @ level=13
-├── layers_0_2_act2_mult2 @ level=8
-├── layers_1_0_conv1 @ level=7
-├── layers_1_0_shortcut_0 @ level=2
-├── layers_1_0_act1_mult1 @ level=6
-├── layers_1_0_act1_sign_acts_0 @ level=5
-├── layers_1_0_act1_sign_acts_1 @ level=12
-├── layers_1_0_act1_sign_acts_2 @ level=8
-├── layers_1_0_act1_mult2 @ level=3
-├── layers_1_0_conv2 @ level=2
-├── layers_1_0_add @ level=1
-├── layers_1_0_act2_mult1 @ level=10
+├── layers_0_2_act2_sign_acts_2 @ level=9
+├── layers_0_2_act2_mult2 @ level=4
+├── layers_1_0_conv1 @ level=3
+├── layers_1_0_shortcut_0 @ level=3
+├── layers_1_0_act1_mult1 @ level=2
+├── layers_1_0_act1_sign_acts_0 @ level=9
+├── layers_1_0_act1_sign_acts_1 @ level=5
+├── layers_1_0_act1_sign_acts_2 @ level=9
+├── layers_1_0_act1_mult2 @ level=4
+├── layers_1_0_conv2 @ level=3
+├── layers_1_0_add @ level=2
+├── layers_1_0_act2_mult1 @ level=2
 ├── layers_1_0_act2_sign_acts_0 @ level=9
 ├── layers_1_0_act2_sign_acts_1 @ level=5
-├── layers_1_0_act2_sign_acts_2 @ level=13
-├── layers_1_0_act2_mult2 @ level=8
-├── layers_1_1_conv1 @ level=7
-├── layers_1_1_act1_mult1 @ level=6
-├── layers_1_1_act1_sign_acts_0 @ level=5
-├── layers_1_1_act1_sign_acts_1 @ level=12
-├── layers_1_1_act1_sign_acts_2 @ level=8
-├── layers_1_1_act1_mult2 @ level=3
-├── layers_1_1_conv2 @ level=2
-├── layers_1_1_add @ level=1
-├── layers_1_1_act2_mult1 @ level=10
+├── layers_1_0_act2_sign_acts_2 @ level=9
+├── layers_1_0_act2_mult2 @ level=4
+├── layers_1_1_conv1 @ level=3
+├── layers_1_1_act1_mult1 @ level=2
+├── layers_1_1_act1_sign_acts_0 @ level=9
+├── layers_1_1_act1_sign_acts_1 @ level=5
+├── layers_1_1_act1_sign_acts_2 @ level=9
+├── layers_1_1_act1_mult2 @ level=4
+├── layers_1_1_conv2 @ level=3
+├── layers_1_1_add @ level=2
+├── layers_1_1_act2_mult1 @ level=2
 ├── layers_1_1_act2_sign_acts_0 @ level=9
 ├── layers_1_1_act2_sign_acts_1 @ level=5
-├── layers_1_1_act2_sign_acts_2 @ level=13
-├── layers_1_1_act2_mult2 @ level=8
-├── layers_1_2_conv1 @ level=7
-├── layers_1_2_act1_mult1 @ level=6
-├── layers_1_2_act1_sign_acts_0 @ level=5
-├── layers_1_2_act1_sign_acts_1 @ level=12
-├── layers_1_2_act1_sign_acts_2 @ level=8
-├── layers_1_2_act1_mult2 @ level=3
-├── layers_1_2_conv2 @ level=2
-├── layers_1_2_add @ level=1
-├── layers_1_2_act2_mult1 @ level=10
+├── layers_1_1_act2_sign_acts_2 @ level=9
+├── layers_1_1_act2_mult2 @ level=4
+├── layers_1_2_conv1 @ level=3
+├── layers_1_2_act1_mult1 @ level=2
+├── layers_1_2_act1_sign_acts_0 @ level=9
+├── layers_1_2_act1_sign_acts_1 @ level=5
+├── layers_1_2_act1_sign_acts_2 @ level=9
+├── layers_1_2_act1_mult2 @ level=4
+├── layers_1_2_conv2 @ level=3
+├── layers_1_2_add @ level=2
+├── layers_1_2_act2_mult1 @ level=2
 ├── layers_1_2_act2_sign_acts_0 @ level=9
 ├── layers_1_2_act2_sign_acts_1 @ level=5
-├── layers_1_2_act2_sign_acts_2 @ level=13
-├── layers_1_2_act2_mult2 @ level=8
-├── layers_2_0_conv1 @ level=7
-├── layers_2_0_shortcut_0 @ level=2
-├── layers_2_0_act1_mult1 @ level=6
-├── layers_2_0_act1_sign_acts_0 @ level=5
-├── layers_2_0_act1_sign_acts_1 @ level=12
-├── layers_2_0_act1_sign_acts_2 @ level=8
-├── layers_2_0_act1_mult2 @ level=3
-├── layers_2_0_conv2 @ level=2
-├── layers_2_0_add @ level=1
-├── layers_2_0_act2_mult1 @ level=10
+├── layers_1_2_act2_sign_acts_2 @ level=9
+├── layers_1_2_act2_mult2 @ level=4
+├── layers_2_0_conv1 @ level=3
+├── layers_2_0_shortcut_0 @ level=3
+├── layers_2_0_act1_mult1 @ level=2
+├── layers_2_0_act1_sign_acts_0 @ level=9
+├── layers_2_0_act1_sign_acts_1 @ level=5
+├── layers_2_0_act1_sign_acts_2 @ level=9
+├── layers_2_0_act1_mult2 @ level=4
+├── layers_2_0_conv2 @ level=3
+├── layers_2_0_add @ level=2
+├── layers_2_0_act2_mult1 @ level=2
 ├── layers_2_0_act2_sign_acts_0 @ level=9
 ├── layers_2_0_act2_sign_acts_1 @ level=5
-├── layers_2_0_act2_sign_acts_2 @ level=13
-├── layers_2_0_act2_mult2 @ level=8
-├── layers_2_1_conv1 @ level=7
-├── layers_2_1_act1_mult1 @ level=6
-├── layers_2_1_act1_sign_acts_0 @ level=5
-├── layers_2_1_act1_sign_acts_1 @ level=13
+├── layers_2_0_act2_sign_acts_2 @ level=9
+├── layers_2_0_act2_mult2 @ level=4
+├── layers_2_1_conv1 @ level=3
+├── layers_2_1_act1_mult1 @ level=2
+├── layers_2_1_act1_sign_acts_0 @ level=9
+├── layers_2_1_act1_sign_acts_1 @ level=5
 ├── layers_2_1_act1_sign_acts_2 @ level=9
 ├── layers_2_1_act1_mult2 @ level=4
 ├── layers_2_1_conv2 @ level=3
 ├── layers_2_1_add @ level=2
 ├── layers_2_1_act2_mult1 @ level=2
-├── layers_2_1_act2_sign_acts_0 @ level=14
-├── layers_2_1_act2_sign_acts_1 @ level=10
-├── layers_2_1_act2_sign_acts_2 @ level=6
-├── layers_2_1_act2_mult2 @ level=12
-├── layers_2_2_conv1 @ level=11
-├── layers_2_2_act1_mult1 @ level=10
+├── layers_2_1_act2_sign_acts_0 @ level=9
+├── layers_2_1_act2_sign_acts_1 @ level=5
+├── layers_2_1_act2_sign_acts_2 @ level=9
+├── layers_2_1_act2_mult2 @ level=4
+├── layers_2_2_conv1 @ level=3
+├── layers_2_2_act1_mult1 @ level=2
 ├── layers_2_2_act1_sign_acts_0 @ level=9
 ├── layers_2_2_act1_sign_acts_1 @ level=5
-├── layers_2_2_act1_sign_acts_2 @ level=13
-├── layers_2_2_act1_mult2 @ level=8
-├── layers_2_2_conv2 @ level=7
-├── layers_2_2_add @ level=6
-├── layers_2_2_act2_mult1 @ level=6
-├── layers_2_2_act2_sign_acts_0 @ level=5
-├── layers_2_2_act2_sign_acts_1 @ level=12
+├── layers_2_2_act1_sign_acts_2 @ level=9
+├── layers_2_2_act1_mult2 @ level=4
+├── layers_2_2_conv2 @ level=3
+├── layers_2_2_add @ level=2
+├── layers_2_2_act2_mult1 @ level=2
+├── layers_2_2_act2_sign_acts_0 @ level=9
+├── layers_2_2_act2_sign_acts_1 @ level=5
 ├── layers_2_2_act2_sign_acts_2 @ level=8
 ├── layers_2_2_act2_mult2 @ level=3
 ├── avgpool @ level=2
@@ -380,7 +380,7 @@ Clear input min/max: -1.656 / 2.062
 FHE input min/max: -1.656 / 2.062
 Clear output min/max: -1.925 / 1.761
 FHE output min/max: -1.925 / 1.761
-done! [1.268 secs.]
+done! [0.890 secs.]
 
 bn1:
 Clear input min/max: -1.925 / 1.761
@@ -393,43 +393,50 @@ ReLU:
 Clear input min/max: -1.925 / 1.761
 FHE input min/max: -1.925 / 1.761
 
+Bootstrap:
+Clear input min/max: -1.925 / 1.761
+FHE input min/max: -0.481 / 0.440
+Clear output min/max: -1.925 / 1.761
+FHE output min/max: -0.481 / 0.440
+done! [13.746 secs.]
+
 act_sign_acts_0:
 Clear input min/max: -1.925 / 1.761
 FHE input min/max: -0.481 / 0.440
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.343 secs.]
+done! [0.718 secs.]
 
 act_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.168 secs.]
+done! [0.350 secs.]
 
 Bootstrap:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [10.176 secs.]
+done! [12.367 secs.]
 
 act_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.818 secs.]
+done! [0.918 secs.]
 Clear output min/max: -1.925 / 1.761
 FHE output min/max: -0.001 / 1.761
-done! [12.324 secs.]
+done! [29.552 secs.]
 
 layers_0_0_conv1:
 Clear input min/max: -0.000 / 1.761
 FHE input min/max: -0.001 / 1.761
 Clear output min/max: -0.866 / 0.589
 FHE output min/max: -0.866 / 0.589
-done! [0.753 secs.]
+done! [0.866 secs.]
 
 layers_0_0_bn1:
 Clear input min/max: -0.866 / 0.589
@@ -442,43 +449,50 @@ ReLU:
 Clear input min/max: -0.866 / 1.000
 FHE input min/max: -0.866 / 0.589
 
+Bootstrap:
+Clear input min/max: -0.866 / 0.589
+FHE input min/max: -0.433 / 0.295
+Clear output min/max: -0.866 / 0.589
+FHE output min/max: -0.433 / 0.295
+done! [13.054 secs.]
+
 layers_0_0_act1_sign_acts_0:
 Clear input min/max: -0.866 / 0.589
 FHE input min/max: -0.433 / 0.295
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.166 secs.]
-
-Bootstrap:
-Clear input min/max: -1.000 / 1.000
-FHE input min/max: -1.000 / 1.000
-Clear output min/max: -1.000 / 1.000
-FHE output min/max: -1.000 / 1.000
-done! [8.940 secs.]
+done! [0.687 secs.]
 
 layers_0_0_act1_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.602 secs.]
+done! [0.346 secs.]
+
+Bootstrap:
+Clear input min/max: -1.000 / 1.000
+FHE input min/max: -1.000 / 1.000
+Clear output min/max: -1.000 / 1.000
+FHE output min/max: -1.000 / 1.000
+done! [12.915 secs.]
 
 layers_0_0_act1_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.496 secs.]
+done! [0.923 secs.]
 Clear output min/max: -0.866 / 1.000
 FHE output min/max: -0.001 / 0.589
-done! [10.949 secs.]
+done! [29.332 secs.]
 
 layers_0_0_conv2:
 Clear input min/max: -0.000 / 0.589
 FHE input min/max: -0.001 / 0.589
 Clear output min/max: -0.393 / 0.234
 FHE output min/max: -0.393 / 0.234
-done! [0.276 secs.]
+done! [0.881 secs.]
 
 layers_0_0_bn2:
 Clear input min/max: -0.393 / 0.234
@@ -487,54 +501,54 @@ Clear output min/max: -0.393 / 0.234
 FHE output min/max: -0.393 / 0.234
 done! [0.000 secs.]
 
-Bootstrap:
-Clear input min/max: -0.291 / 1.647
-FHE input min/max: -0.293 / 1.647
-Clear output min/max: -0.291 / 1.647
-FHE output min/max: -0.293 / 1.647
-done! [8.948 secs.]
-
 ReLU:
 Clear input min/max: -0.291 / 1.647
 FHE input min/max: -0.293 / 1.647
+
+Bootstrap:
+Clear input min/max: -0.291 / 1.647
+FHE input min/max: -0.073 / 0.412
+Clear output min/max: -0.291 / 1.647
+FHE output min/max: -0.073 / 0.412
+done! [13.333 secs.]
 
 layers_0_0_act2_sign_acts_0:
 Clear input min/max: -0.291 / 1.647
 FHE input min/max: -0.073 / 0.412
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -0.769 / 1.000
-done! [0.548 secs.]
+done! [0.736 secs.]
 
 layers_0_0_act2_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -0.769 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.333 secs.]
+done! [0.351 secs.]
 
 Bootstrap:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [8.949 secs.]
+done! [13.227 secs.]
 
 layers_0_0_act2_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.807 secs.]
+done! [0.908 secs.]
 Clear output min/max: -0.291 / 1.647
 FHE output min/max: -0.001 / 1.647
-done! [11.543 secs.]
+done! [30.039 secs.]
 
 layers_0_1_conv1:
 Clear input min/max: -0.000 / 1.647
 FHE input min/max: -0.001 / 1.647
 Clear output min/max: -0.886 / 0.766
 FHE output min/max: -0.886 / 0.766
-done! [0.717 secs.]
+done! [0.893 secs.]
 
 layers_0_1_bn1:
 Clear input min/max: -0.886 / 0.766
@@ -547,43 +561,50 @@ ReLU:
 Clear input min/max: -0.886 / 1.000
 FHE input min/max: -0.886 / 0.766
 
+Bootstrap:
+Clear input min/max: -0.886 / 0.766
+FHE input min/max: -0.443 / 0.383
+Clear output min/max: -0.886 / 0.766
+FHE output min/max: -0.443 / 0.383
+done! [12.381 secs.]
+
 layers_0_1_act1_sign_acts_0:
 Clear input min/max: -0.886 / 0.766
 FHE input min/max: -0.443 / 0.383
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.167 secs.]
-
-Bootstrap:
-Clear input min/max: -1.000 / 1.000
-FHE input min/max: -1.000 / 1.000
-Clear output min/max: -1.000 / 1.000
-FHE output min/max: -1.000 / 1.000
-done! [8.955 secs.]
+done! [0.719 secs.]
 
 layers_0_1_act1_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.617 secs.]
+done! [0.348 secs.]
+
+Bootstrap:
+Clear input min/max: -1.000 / 1.000
+FHE input min/max: -1.000 / 1.000
+Clear output min/max: -1.000 / 1.000
+FHE output min/max: -1.000 / 1.000
+done! [13.194 secs.]
 
 layers_0_1_act1_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.498 secs.]
+done! [0.905 secs.]
 Clear output min/max: -0.886 / 1.000
 FHE output min/max: -0.001 / 0.766
-done! [10.996 secs.]
+done! [28.988 secs.]
 
 layers_0_1_conv2:
 Clear input min/max: -0.000 / 0.766
 FHE input min/max: -0.001 / 0.766
 Clear output min/max: -0.426 / 0.319
 FHE output min/max: -0.426 / 0.319
-done! [0.274 secs.]
+done! [0.894 secs.]
 
 layers_0_1_bn2:
 Clear input min/max: -0.426 / 0.319
@@ -592,54 +613,54 @@ Clear output min/max: -0.426 / 0.319
 FHE output min/max: -0.426 / 0.319
 done! [0.000 secs.]
 
-Bootstrap:
-Clear input min/max: -0.298 / 1.659
-FHE input min/max: -0.299 / 1.659
-Clear output min/max: -0.298 / 1.659
-FHE output min/max: -0.299 / 1.659
-done! [9.886 secs.]
-
 ReLU:
 Clear input min/max: -0.298 / 1.659
 FHE input min/max: -0.299 / 1.659
+
+Bootstrap:
+Clear input min/max: -0.298 / 1.659
+FHE input min/max: -0.075 / 0.415
+Clear output min/max: -0.298 / 1.659
+FHE output min/max: -0.075 / 0.415
+done! [11.870 secs.]
 
 layers_0_1_act2_sign_acts_0:
 Clear input min/max: -0.298 / 1.659
 FHE input min/max: -0.075 / 0.415
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -0.781 / 1.000
-done! [0.547 secs.]
+done! [0.720 secs.]
 
 layers_0_1_act2_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -0.781 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.332 secs.]
+done! [0.352 secs.]
 
 Bootstrap:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [9.092 secs.]
+done! [13.582 secs.]
 
 layers_0_1_act2_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.807 secs.]
+done! [0.904 secs.]
 Clear output min/max: -0.298 / 1.659
 FHE output min/max: -0.001 / 1.659
-done! [11.685 secs.]
+done! [28.887 secs.]
 
 layers_0_2_conv1:
 Clear input min/max: -0.000 / 1.659
 FHE input min/max: -0.001 / 1.659
 Clear output min/max: -0.609 / 0.927
 FHE output min/max: -0.609 / 0.927
-done! [0.782 secs.]
+done! [0.897 secs.]
 
 layers_0_2_bn1:
 Clear input min/max: -0.609 / 0.927
@@ -652,43 +673,50 @@ ReLU:
 Clear input min/max: -0.609 / 1.000
 FHE input min/max: -0.609 / 0.927
 
+Bootstrap:
+Clear input min/max: -0.609 / 0.927
+FHE input min/max: -0.305 / 0.463
+Clear output min/max: -0.609 / 0.927
+FHE output min/max: -0.305 / 0.463
+done! [12.529 secs.]
+
 layers_0_2_act1_sign_acts_0:
 Clear input min/max: -0.609 / 0.927
 FHE input min/max: -0.305 / 0.463
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.166 secs.]
-
-Bootstrap:
-Clear input min/max: -1.000 / 1.000
-FHE input min/max: -1.000 / 1.000
-Clear output min/max: -1.000 / 1.000
-FHE output min/max: -1.000 / 1.000
-done! [9.534 secs.]
+done! [0.715 secs.]
 
 layers_0_2_act1_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.624 secs.]
+done! [0.348 secs.]
+
+Bootstrap:
+Clear input min/max: -1.000 / 1.000
+FHE input min/max: -1.000 / 1.000
+Clear output min/max: -1.000 / 1.000
+FHE output min/max: -1.000 / 1.000
+done! [13.206 secs.]
 
 layers_0_2_act1_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.500 secs.]
+done! [0.928 secs.]
 Clear output min/max: -0.609 / 1.000
 FHE output min/max: -0.001 / 0.927
-done! [11.585 secs.]
+done! [29.226 secs.]
 
 layers_0_2_conv2:
 Clear input min/max: -0.000 / 0.927
 FHE input min/max: -0.001 / 0.927
 Clear output min/max: -0.479 / 0.333
 FHE output min/max: -0.479 / 0.333
-done! [0.279 secs.]
+done! [0.896 secs.]
 
 layers_0_2_bn2:
 Clear input min/max: -0.479 / 0.333
@@ -697,54 +725,54 @@ Clear output min/max: -0.479 / 0.333
 FHE output min/max: -0.479 / 0.333
 done! [0.000 secs.]
 
-Bootstrap:
-Clear input min/max: -0.334 / 1.892
-FHE input min/max: -0.335 / 1.892
-Clear output min/max: -0.334 / 1.892
-FHE output min/max: -0.335 / 1.892
-done! [9.645 secs.]
-
 ReLU:
 Clear input min/max: -0.334 / 1.892
 FHE input min/max: -0.335 / 1.892
+
+Bootstrap:
+Clear input min/max: -0.334 / 1.892
+FHE input min/max: -0.084 / 0.473
+Clear output min/max: -0.334 / 1.892
+FHE output min/max: -0.084 / 0.473
+done! [13.582 secs.]
 
 layers_0_2_act2_sign_acts_0:
 Clear input min/max: -0.334 / 1.892
 FHE input min/max: -0.084 / 0.473
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -0.842 / 1.000
-done! [0.551 secs.]
+done! [0.689 secs.]
 
 layers_0_2_act2_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -0.842 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.335 secs.]
+done! [0.345 secs.]
 
 Bootstrap:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [9.024 secs.]
+done! [11.871 secs.]
 
 layers_0_2_act2_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.815 secs.]
+done! [0.901 secs.]
 Clear output min/max: -0.334 / 1.892
 FHE output min/max: -0.001 / 1.892
-done! [11.658 secs.]
+done! [28.803 secs.]
 
 layers_1_0_conv1:
 Clear input min/max: -0.000 / 1.892
 FHE input min/max: -0.001 / 1.892
 Clear output min/max: -1.078 / 1.165
 FHE output min/max: -1.078 / 1.164
-done! [0.875 secs.]
+done! [0.948 secs.]
 
 layers_1_0_bn1:
 Clear input min/max: -1.078 / 1.165
@@ -757,43 +785,50 @@ ReLU:
 Clear input min/max: -1.078 / 1.165
 FHE input min/max: -1.078 / 1.164
 
+Bootstrap:
+Clear input min/max: -1.078 / 1.165
+FHE input min/max: -0.359 / 0.388
+Clear output min/max: -1.078 / 1.165
+FHE output min/max: -0.359 / 0.388
+done! [12.838 secs.]
+
 layers_1_0_act1_sign_acts_0:
 Clear input min/max: -1.078 / 1.165
 FHE input min/max: -0.359 / 0.388
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.172 secs.]
-
-Bootstrap:
-Clear input min/max: -1.000 / 1.000
-FHE input min/max: -1.000 / 1.000
-Clear output min/max: -1.000 / 1.000
-FHE output min/max: -1.000 / 1.000
-done! [8.345 secs.]
+done! [0.711 secs.]
 
 layers_1_0_act1_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.622 secs.]
+done! [0.347 secs.]
+
+Bootstrap:
+Clear input min/max: -1.000 / 1.000
+FHE input min/max: -1.000 / 1.000
+Clear output min/max: -1.000 / 1.000
+FHE output min/max: -1.000 / 1.000
+done! [12.233 secs.]
 
 layers_1_0_act1_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.503 secs.]
+done! [0.897 secs.]
 Clear output min/max: -1.078 / 1.165
 FHE output min/max: -0.001 / 1.164
-done! [10.396 secs.]
+done! [28.420 secs.]
 
 layers_1_0_conv2:
 Clear input min/max: -0.000 / 1.165
 FHE input min/max: -0.001 / 1.164
 Clear output min/max: -0.473 / 0.333
 FHE output min/max: -0.473 / 0.333
-done! [0.627 secs.]
+done! [1.854 secs.]
 
 layers_1_0_bn2:
 Clear input min/max: -0.473 / 0.333
@@ -807,7 +842,7 @@ Clear input min/max: -0.000 / 1.892
 FHE input min/max: -0.001 / 1.892
 Clear output min/max: -0.921 / 0.598
 FHE output min/max: -0.921 / 0.598
-done! [0.136 secs.]
+done! [0.398 secs.]
 
 layers_1_0_shortcut_1:
 Clear input min/max: -0.921 / 0.598
@@ -816,54 +851,54 @@ Clear output min/max: -0.921 / 0.598
 FHE output min/max: -0.921 / 0.598
 done! [0.000 secs.]
 
-Bootstrap:
-Clear input min/max: -1.043 / 0.718
-FHE input min/max: -1.043 / 0.718
-Clear output min/max: -1.043 / 0.718
-FHE output min/max: -1.043 / 0.718
-done! [7.864 secs.]
-
 ReLU:
 Clear input min/max: -1.043 / 1.000
 FHE input min/max: -1.043 / 0.718
+
+Bootstrap:
+Clear input min/max: -1.043 / 0.718
+FHE input min/max: -0.348 / 0.239
+Clear output min/max: -1.043 / 0.718
+FHE output min/max: -0.348 / 0.239
+done! [11.045 secs.]
 
 layers_1_0_act2_sign_acts_0:
 Clear input min/max: -1.043 / 0.718
 FHE input min/max: -0.348 / 0.239
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.554 secs.]
+done! [0.711 secs.]
 
 layers_1_0_act2_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.338 secs.]
+done! [0.346 secs.]
 
 Bootstrap:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [7.116 secs.]
+done! [12.469 secs.]
 
 layers_1_0_act2_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.812 secs.]
+done! [0.895 secs.]
 Clear output min/max: -1.043 / 1.000
 FHE output min/max: -0.001 / 0.718
-done! [9.732 secs.]
+done! [26.864 secs.]
 
 layers_1_1_conv1:
 Clear input min/max: -0.000 / 0.718
 FHE input min/max: -0.001 / 0.718
 Clear output min/max: -0.287 / 0.290
 FHE output min/max: -0.287 / 0.290
-done! [1.687 secs.]
+done! [1.809 secs.]
 
 layers_1_1_bn1:
 Clear input min/max: -0.287 / 0.290
@@ -876,43 +911,50 @@ ReLU:
 Clear input min/max: -0.287 / 1.000
 FHE input min/max: -0.287 / 0.290
 
+Bootstrap:
+Clear input min/max: -0.287 / 0.290
+FHE input min/max: -0.143 / 0.145
+Clear output min/max: -0.287 / 0.290
+FHE output min/max: -0.143 / 0.145
+done! [11.085 secs.]
+
 layers_1_1_act1_sign_acts_0:
 Clear input min/max: -0.287 / 0.290
 FHE input min/max: -0.143 / 0.145
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.167 secs.]
-
-Bootstrap:
-Clear input min/max: -1.000 / 1.000
-FHE input min/max: -1.000 / 1.000
-Clear output min/max: -1.000 / 1.000
-FHE output min/max: -1.000 / 1.000
-done! [7.116 secs.]
+done! [0.687 secs.]
 
 layers_1_1_act1_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.627 secs.]
+done! [0.345 secs.]
+
+Bootstrap:
+Clear input min/max: -1.000 / 1.000
+FHE input min/max: -1.000 / 1.000
+Clear output min/max: -1.000 / 1.000
+FHE output min/max: -1.000 / 1.000
+done! [11.073 secs.]
 
 layers_1_1_act1_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.504 secs.]
+done! [0.928 secs.]
 Clear output min/max: -0.287 / 1.000
 FHE output min/max: -0.001 / 0.290
-done! [9.177 secs.]
+done! [25.533 secs.]
 
 layers_1_1_conv2:
 Clear input min/max: -0.000 / 0.290
 FHE input min/max: -0.001 / 0.290
 Clear output min/max: -0.131 / 0.152
 FHE output min/max: -0.131 / 0.152
-done! [0.612 secs.]
+done! [1.789 secs.]
 
 layers_1_1_bn2:
 Clear input min/max: -0.131 / 0.152
@@ -921,54 +963,54 @@ Clear output min/max: -0.131 / 0.152
 FHE output min/max: -0.131 / 0.152
 done! [0.000 secs.]
 
-Bootstrap:
-Clear input min/max: -0.094 / 0.795
-FHE input min/max: -0.094 / 0.796
-Clear output min/max: -0.094 / 0.795
-FHE output min/max: -0.094 / 0.796
-done! [8.080 secs.]
-
 ReLU:
 Clear input min/max: -0.094 / 1.000
 FHE input min/max: -0.094 / 0.796
+
+Bootstrap:
+Clear input min/max: -0.094 / 0.795
+FHE input min/max: -0.047 / 0.398
+Clear output min/max: -0.094 / 0.795
+FHE output min/max: -0.047 / 0.398
+done! [12.478 secs.]
 
 layers_1_1_act2_sign_acts_0:
 Clear input min/max: -0.094 / 0.795
 FHE input min/max: -0.047 / 0.398
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -0.536 / 1.000
-done! [0.550 secs.]
+done! [0.687 secs.]
 
 layers_1_1_act2_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -0.536 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.334 secs.]
+done! [0.344 secs.]
 
 Bootstrap:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [7.147 secs.]
+done! [11.077 secs.]
 
 layers_1_1_act2_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.816 secs.]
+done! [0.899 secs.]
 Clear output min/max: -0.094 / 1.000
 FHE output min/max: -0.001 / 0.796
-done! [9.749 secs.]
+done! [26.865 secs.]
 
 layers_1_2_conv1:
 Clear input min/max: -0.000 / 0.795
 FHE input min/max: -0.001 / 0.796
 Clear output min/max: -0.253 / 0.306
 FHE output min/max: -0.253 / 0.307
-done! [1.715 secs.]
+done! [1.882 secs.]
 
 layers_1_2_bn1:
 Clear input min/max: -0.253 / 0.306
@@ -981,43 +1023,50 @@ ReLU:
 Clear input min/max: -0.253 / 1.000
 FHE input min/max: -0.253 / 0.307
 
+Bootstrap:
+Clear input min/max: -0.253 / 0.306
+FHE input min/max: -0.127 / 0.153
+Clear output min/max: -0.253 / 0.306
+FHE output min/max: -0.127 / 0.153
+done! [11.035 secs.]
+
 layers_1_2_act1_sign_acts_0:
 Clear input min/max: -0.253 / 0.306
 FHE input min/max: -0.127 / 0.153
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -0.997 / 1.000
-done! [0.168 secs.]
-
-Bootstrap:
-Clear input min/max: -1.000 / 1.000
-FHE input min/max: -0.997 / 1.000
-Clear output min/max: -1.000 / 1.000
-FHE output min/max: -0.997 / 1.000
-done! [7.104 secs.]
+done! [0.709 secs.]
 
 layers_1_2_act1_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -0.997 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.623 secs.]
+done! [0.345 secs.]
+
+Bootstrap:
+Clear input min/max: -1.000 / 1.000
+FHE input min/max: -1.000 / 1.000
+Clear output min/max: -1.000 / 1.000
+FHE output min/max: -1.000 / 1.000
+done! [11.206 secs.]
 
 layers_1_2_act1_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.500 secs.]
+done! [0.898 secs.]
 Clear output min/max: -0.253 / 1.000
 FHE output min/max: -0.001 / 0.307
-done! [9.138 secs.]
+done! [25.599 secs.]
 
 layers_1_2_conv2:
 Clear input min/max: -0.000 / 0.306
 FHE input min/max: -0.001 / 0.307
 Clear output min/max: -0.155 / 0.173
 FHE output min/max: -0.155 / 0.173
-done! [0.614 secs.]
+done! [1.709 secs.]
 
 layers_1_2_bn2:
 Clear input min/max: -0.155 / 0.173
@@ -1026,103 +1075,110 @@ Clear output min/max: -0.155 / 0.173
 FHE output min/max: -0.155 / 0.173
 done! [0.000 secs.]
 
-Bootstrap:
-Clear input min/max: -0.110 / 0.759
-FHE input min/max: -0.110 / 0.759
-Clear output min/max: -0.110 / 0.759
-FHE output min/max: -0.110 / 0.759
-done! [7.962 secs.]
-
 ReLU:
 Clear input min/max: -0.110 / 1.000
 FHE input min/max: -0.110 / 0.759
+
+Bootstrap:
+Clear input min/max: -0.110 / 0.759
+FHE input min/max: -0.055 / 0.380
+Clear output min/max: -0.110 / 0.759
+FHE output min/max: -0.055 / 0.380
+done! [12.296 secs.]
 
 layers_1_2_act2_sign_acts_0:
 Clear input min/max: -0.110 / 0.759
 FHE input min/max: -0.055 / 0.380
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -0.612 / 1.000
-done! [0.550 secs.]
+done! [0.685 secs.]
 
 layers_1_2_act2_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -0.612 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.334 secs.]
+done! [0.345 secs.]
 
 Bootstrap:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [7.269 secs.]
+done! [11.088 secs.]
 
 layers_1_2_act2_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.812 secs.]
+done! [0.895 secs.]
 Clear output min/max: -0.110 / 1.000
 FHE output min/max: -0.001 / 0.759
-done! [9.884 secs.]
+done! [26.697 secs.]
 
 layers_2_0_conv1:
 Clear input min/max: -0.000 / 0.759
 FHE input min/max: -0.001 / 0.759
 Clear output min/max: -0.293 / 0.314
-FHE output min/max: -0.294 / 0.314
-done! [1.368 secs.]
+FHE output min/max: -0.293 / 0.314
+done! [1.407 secs.]
 
 layers_2_0_bn1:
 Clear input min/max: -0.293 / 0.314
-FHE input min/max: -0.294 / 0.314
+FHE input min/max: -0.293 / 0.314
 Clear output min/max: -0.293 / 0.314
-FHE output min/max: -0.294 / 0.314
+FHE output min/max: -0.293 / 0.314
 done! [0.000 secs.]
 
 ReLU:
 Clear input min/max: -0.293 / 1.000
-FHE input min/max: -0.294 / 0.314
+FHE input min/max: -0.293 / 0.314
+
+Bootstrap:
+Clear input min/max: -0.293 / 0.314
+FHE input min/max: -0.147 / 0.157
+Clear output min/max: -0.293 / 0.314
+FHE output min/max: -0.147 / 0.157
+done! [12.217 secs.]
 
 layers_2_0_act1_sign_acts_0:
 Clear input min/max: -0.293 / 0.314
 FHE input min/max: -0.147 / 0.157
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.168 secs.]
-
-Bootstrap:
-Clear input min/max: -1.000 / 1.000
-FHE input min/max: -1.000 / 1.000
-Clear output min/max: -1.000 / 1.000
-FHE output min/max: -1.000 / 1.000
-done! [7.953 secs.]
+done! [0.684 secs.]
 
 layers_2_0_act1_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.601 secs.]
+done! [0.345 secs.]
+
+Bootstrap:
+Clear input min/max: -1.000 / 1.000
+FHE input min/max: -1.000 / 1.000
+Clear output min/max: -1.000 / 1.000
+FHE output min/max: -1.000 / 1.000
+done! [10.829 secs.]
 
 layers_2_0_act1_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.497 secs.]
+done! [0.897 secs.]
 Clear output min/max: -0.293 / 1.000
 FHE output min/max: -0.001 / 0.314
-done! [9.945 secs.]
+done! [26.354 secs.]
 
 layers_2_0_conv2:
 Clear input min/max: -0.000 / 0.314
 FHE input min/max: -0.001 / 0.314
 Clear output min/max: -0.083 / 0.093
 FHE output min/max: -0.083 / 0.093
-done! [1.057 secs.]
+done! [2.895 secs.]
 
 layers_2_0_bn2:
 Clear input min/max: -0.083 / 0.093
@@ -1136,7 +1192,7 @@ Clear input min/max: -0.000 / 0.759
 FHE input min/max: -0.001 / 0.759
 Clear output min/max: -0.303 / 0.336
 FHE output min/max: -0.303 / 0.336
-done! [0.236 secs.]
+done! [0.668 secs.]
 
 layers_2_0_shortcut_1:
 Clear input min/max: -0.303 / 0.336
@@ -1145,54 +1201,54 @@ Clear output min/max: -0.303 / 0.336
 FHE output min/max: -0.303 / 0.336
 done! [0.000 secs.]
 
-Bootstrap:
-Clear input min/max: -0.271 / 0.343
-FHE input min/max: -0.271 / 0.343
-Clear output min/max: -0.271 / 0.343
-FHE output min/max: -0.271 / 0.343
-done! [6.991 secs.]
-
 ReLU:
 Clear input min/max: -0.271 / 1.000
 FHE input min/max: -0.271 / 0.343
+
+Bootstrap:
+Clear input min/max: -0.271 / 0.343
+FHE input min/max: -0.135 / 0.171
+Clear output min/max: -0.271 / 0.343
+FHE output min/max: -0.135 / 0.171
+done! [10.854 secs.]
 
 layers_2_0_act2_sign_acts_0:
 Clear input min/max: -0.271 / 0.343
 FHE input min/max: -0.135 / 0.171
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -0.999 / 0.997
-done! [0.563 secs.]
+done! [0.708 secs.]
 
 layers_2_0_act2_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -0.999 / 0.997
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.333 secs.]
+done! [0.344 secs.]
 
 Bootstrap:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [7.649 secs.]
+done! [10.820 secs.]
 
 layers_2_0_act2_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.814 secs.]
+done! [0.899 secs.]
 Clear output min/max: -0.271 / 1.000
 FHE output min/max: -0.001 / 0.343
-done! [10.235 secs.]
+done! [25.035 secs.]
 
 layers_2_1_conv1:
 Clear input min/max: -0.000 / 0.343
 FHE input min/max: -0.001 / 0.343
 Clear output min/max: -0.097 / 0.127
 FHE output min/max: -0.097 / 0.127
-done! [2.467 secs.]
+done! [2.726 secs.]
 
 layers_2_1_bn1:
 Clear input min/max: -0.097 / 0.127
@@ -1205,43 +1261,50 @@ ReLU:
 Clear input min/max: -0.097 / 1.000
 FHE input min/max: -0.097 / 0.127
 
+Bootstrap:
+Clear input min/max: -0.097 / 0.127
+FHE input min/max: -0.049 / 0.063
+Clear output min/max: -0.097 / 0.127
+FHE output min/max: -0.049 / 0.063
+done! [10.838 secs.]
+
 layers_2_1_act1_sign_acts_0:
 Clear input min/max: -0.097 / 0.127
 FHE input min/max: -0.049 / 0.063
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -0.551 / 0.690
-done! [0.166 secs.]
-
-Bootstrap:
-Clear input min/max: -1.000 / 1.000
-FHE input min/max: -0.551 / 0.690
-Clear output min/max: -1.000 / 1.000
-FHE output min/max: -0.551 / 0.690
-done! [7.159 secs.]
+done! [0.686 secs.]
 
 layers_2_1_act1_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -0.551 / 0.690
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.599 secs.]
+done! [0.346 secs.]
+
+Bootstrap:
+Clear input min/max: -1.000 / 1.000
+FHE input min/max: -1.000 / 1.000
+Clear output min/max: -1.000 / 1.000
+FHE output min/max: -1.000 / 1.000
+done! [10.993 secs.]
 
 layers_2_1_act1_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.496 secs.]
+done! [0.897 secs.]
 Clear output min/max: -0.097 / 1.000
 FHE output min/max: -0.001 / 0.127
-done! [9.123 secs.]
+done! [25.148 secs.]
 
 layers_2_1_conv2:
 Clear input min/max: -0.000 / 0.127
 FHE input min/max: -0.001 / 0.127
 Clear output min/max: -0.043 / 0.040
 FHE output min/max: -0.043 / 0.040
-done! [1.413 secs.]
+done! [2.803 secs.]
 
 layers_2_1_bn2:
 Clear input min/max: -0.043 / 0.040
@@ -1259,45 +1322,45 @@ Clear input min/max: -0.043 / 0.341
 FHE input min/max: -0.021 / 0.170
 Clear output min/max: -0.043 / 0.341
 FHE output min/max: -0.021 / 0.170
-done! [6.954 secs.]
+done! [12.019 secs.]
 
 layers_2_1_act2_sign_acts_0:
 Clear input min/max: -0.043 / 0.341
 FHE input min/max: -0.021 / 0.170
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -0.255 / 0.998
-done! [0.604 secs.]
+done! [0.686 secs.]
 
 layers_2_1_act2_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -0.255 / 0.998
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -0.999 / 1.000
-done! [0.384 secs.]
+done! [0.345 secs.]
+
+Bootstrap:
+Clear input min/max: -1.000 / 1.000
+FHE input min/max: -0.999 / 1.000
+Clear output min/max: -1.000 / 1.000
+FHE output min/max: -0.999 / 1.000
+done! [10.915 secs.]
 
 layers_2_1_act2_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -0.999 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.256 secs.]
-
-Bootstrap:
-Clear input min/max: 0.000 / 1.000
-FHE input min/max: 0.000 / 1.000
-Clear output min/max: 0.000 / 1.000
-FHE output min/max: -0.000 / 1.000
-done! [6.915 secs.]
+done! [0.897 secs.]
 Clear output min/max: -0.043 / 1.000
 FHE output min/max: -0.001 / 0.341
-done! [16.109 secs.]
+done! [26.248 secs.]
 
 layers_2_2_conv1:
 Clear input min/max: -0.000 / 0.341
 FHE input min/max: -0.001 / 0.341
 Clear output min/max: -0.090 / 0.089
 FHE output min/max: -0.090 / 0.090
-done! [3.817 secs.]
+done! [2.911 secs.]
 
 layers_2_2_bn1:
 Clear input min/max: -0.090 / 0.089
@@ -1310,43 +1373,50 @@ ReLU:
 Clear input min/max: -0.090 / 1.000
 FHE input min/max: -0.090 / 0.090
 
+Bootstrap:
+Clear input min/max: -0.090 / 0.089
+FHE input min/max: -0.045 / 0.045
+Clear output min/max: -0.090 / 0.089
+FHE output min/max: -0.045 / 0.045
+done! [10.816 secs.]
+
 layers_2_2_act1_sign_acts_0:
 Clear input min/max: -0.090 / 0.089
 FHE input min/max: -0.045 / 0.045
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -0.517 / 0.513
-done! [0.334 secs.]
+done! [0.685 secs.]
 
 layers_2_2_act1_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -0.517 / 0.513
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [0.167 secs.]
+done! [0.344 secs.]
 
 Bootstrap:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -1.000 / 1.000
-done! [7.844 secs.]
+done! [10.807 secs.]
 
 layers_2_2_act1_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -1.000 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.803 secs.]
+done! [0.896 secs.]
 Clear output min/max: -0.090 / 1.000
 FHE output min/max: -0.001 / 0.090
-done! [9.888 secs.]
+done! [24.931 secs.]
 
 layers_2_2_conv2:
 Clear input min/max: -0.000 / 0.089
 FHE input min/max: -0.001 / 0.090
 Clear output min/max: -0.031 / 0.031
 FHE output min/max: -0.031 / 0.031
-done! [2.401 secs.]
+done! [2.830 secs.]
 
 layers_2_2_bn2:
 Clear input min/max: -0.031 / 0.031
@@ -1359,57 +1429,64 @@ ReLU:
 Clear input min/max: -0.022 / 1.000
 FHE input min/max: -0.022 / 0.336
 
+Bootstrap:
+Clear input min/max: -0.022 / 0.336
+FHE input min/max: -0.011 / 0.168
+Clear output min/max: -0.022 / 0.336
+FHE output min/max: -0.011 / 0.168
+done! [10.900 secs.]
+
 layers_2_2_act2_sign_acts_0:
 Clear input min/max: -0.022 / 0.336
 FHE input min/max: -0.011 / 0.168
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -0.133 / 0.999
-done! [0.168 secs.]
-
-Bootstrap:
-Clear input min/max: -1.000 / 1.000
-FHE input min/max: -0.133 / 0.999
-Clear output min/max: -1.000 / 1.000
-FHE output min/max: -0.133 / 0.999
-done! [6.975 secs.]
+done! [0.695 secs.]
 
 layers_2_2_act2_sign_acts_1:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -0.133 / 0.999
 Clear output min/max: -1.000 / 1.000
 FHE output min/max: -0.801 / 1.000
-done! [0.602 secs.]
+done! [0.346 secs.]
+
+Bootstrap:
+Clear input min/max: -1.000 / 1.000
+FHE input min/max: -0.801 / 1.000
+Clear output min/max: -1.000 / 1.000
+FHE output min/max: -0.801 / 1.000
+done! [10.857 secs.]
 
 layers_2_2_act2_sign_acts_2:
 Clear input min/max: -1.000 / 1.000
 FHE input min/max: -0.801 / 1.000
 Clear output min/max: 0.000 / 1.000
 FHE output min/max: 0.000 / 1.000
-done! [0.497 secs.]
+done! [0.902 secs.]
 Clear output min/max: -0.022 / 1.000
 FHE output min/max: -0.001 / 0.336
-done! [8.961 secs.]
+done! [25.104 secs.]
 
 avgpool:
 Clear input min/max: -0.000 / 0.336
 FHE input min/max: -0.001 / 0.336
 Clear output min/max: 0.000 / 0.129
 FHE output min/max: -0.000 / 0.129
-done! [0.433 secs.]
+done! [0.890 secs.]
 
 linear:
 Clear input min/max: 0.000 / 0.129
 FHE input min/max: -0.000 / 0.129
 Clear output min/max: -0.115 / 0.107
 FHE output min/max: -0.115 / 0.107
-done! [0.150 secs.]
+done! [0.301 secs.]
 
 tensor([[ 0.0172,  0.1071,  0.0193,  0.0874,  0.0298, -0.1148,  0.0411, -0.1114,
          -0.0252, -0.0003]], grad_fn=<AddmmBackward0>)
-tensor([[ 1.7227e-02,  1.0712e-01,  1.8688e-02,  8.7019e-02,  2.9496e-02,
-         -1.1476e-01,  4.1680e-02, -1.1125e-01, -2.5132e-02, -4.2867e-05]])
+tensor([[ 1.7227e-02,  1.0712e-01,  1.8691e-02,  8.7021e-02,  2.9497e-02,
+         -1.1476e-01,  4.1679e-02, -1.1126e-01, -2.5133e-02, -4.4851e-05]])
 
 MAE: 0.0003
-Precision: 11.9245
-Runtime: 296.9111 secs.
+Precision: 11.9315
+Runtime: 563.2959 secs.
 
