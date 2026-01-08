@@ -19,8 +19,8 @@ def main():
     ]
 
     for filename in filenames:
-        output_file = f"{filename}_latency_nexus1.txt"
-        command = ["python3", "run_resnet_latency.py", "/home/japark/env_orion/orion/configs/"+filename]
+        output_file = f"{filename}_silu_latency_nexus1.txt"
+        command = ["python3", "run_resnet_silu_latency.py", "/home/japark/env_orion/orion/configs/"+filename]
 
         print(f"Running: {' '.join(command)} > {output_file}")
 
