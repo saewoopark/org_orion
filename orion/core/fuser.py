@@ -27,7 +27,7 @@ class Fuser:
             bn.on_bias = torch.ones(bn.num_features) * cheb.constant
 
         cheb.fused = True
-        cheb.depth -= 1
+        # cheb.depth -= 1
 
     def _fuse_linear_bn(self, linear, bn):
         on_inv_running_std = 1 / torch.sqrt(bn.on_running_var + bn.eps) 

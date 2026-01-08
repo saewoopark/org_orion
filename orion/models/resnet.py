@@ -1,7 +1,6 @@
 import torch.nn as nn
 import orion.nn as on
-
-
+import torch 
 class BasicBlock(on.Module):
     expansion = 1
 
@@ -28,6 +27,102 @@ class BasicBlock(on.Module):
         out = self.add(out, self.shortcut(x))
         return self.act2(out)
     
+class NoisyBasicBlock(on.Module):
+    expansion = 1
+
+    def __init__(self, Ci, Co, stride=1):
+        super().__init__()
+        self.conv1 = on.Conv2d(Ci, Co, kernel_size=3, stride=stride, padding=1, bias=False)
+        self.bn1   = on.BatchNorm2d(Co)
+        self.act1  = on.ReLU()
+
+        self.conv2 = on.Conv2d(Co, Co, kernel_size=3, stride=1, padding=1, bias=False)
+        self.bn2   = on.BatchNorm2d(Co)
+        self.act2  = on.ReLU()
+       
+        self.add = on.Add()
+        self.shortcut = nn.Sequential()
+        if stride != 1 or Ci != self.expansion*Co:
+            self.shortcut = nn.Sequential(
+                on.Conv2d(Ci, self.expansion*Co, kernel_size=1, stride=stride, bias=False),
+                on.BatchNorm2d(self.expansion*Co))
+  
+    def forward(self, x):
+        out = self.conv1(x) 
+        noise = torch.randn(out.shape).to(torch.device("mps")) * torch.std(out) * (1/16)
+        # (1/16)
+        out = out + noise
+
+        out = self.act1(self.bn1(out))
+
+        out = self.conv2(out) 
+        noise = torch.randn(out.shape).to(torch.device("mps")) * torch.std(out) * (1/16)
+        out = out + noise
+
+        out = self.bn2(out)
+        out = self.add(out, self.shortcut(x))
+        return self.act2(out)
+    
+
+
+
+
+class SiLUBasicBlock(on.Module):
+    expansion = 1
+
+    def __init__(self, Ci, Co, stride=1):
+        super().__init__()
+        self.conv1 = on.Conv2d(Ci, Co, kernel_size=3, stride=stride, padding=1, bias=False)
+        self.bn1   = on.BatchNorm2d(Co)
+        self.act1  = on.SiLU(degree=127) 
+
+        self.conv2 = on.Conv2d(Co, Co, kernel_size=3, stride=1, padding=1, bias=False)
+        self.bn2   = on.BatchNorm2d(Co)
+        self.act2  = on.SiLU(degree=127) 
+       
+        self.add = on.Add()
+        self.shortcut = nn.Sequential()
+        if stride != 1 or Ci != self.expansion*Co:
+            self.shortcut = nn.Sequential(
+                on.Conv2d(Ci, self.expansion*Co, kernel_size=1, stride=stride, bias=False),
+                on.BatchNorm2d(self.expansion*Co))
+  
+    def forward(self, x):
+        out = self.act1(self.bn1(self.conv1(x)))
+        out = self.bn2(self.conv2(out))
+        out = self.add(out, self.shortcut(x))
+        return self.act2(out)
+
+
+class HtanSiLUBasicBlock(on.Module):
+    expansion = 1
+
+    def __init__(self, Ci, Co, stride=1):
+        super().__init__()
+        self.conv1 = on.Conv2d(Ci, Co, kernel_size=3, stride=stride, padding=1, bias=False)
+        self.bn1   = on.BatchNorm2d(Co)
+        self.htan1 = nn.Hardtanh()
+        self.act1  = on.SiLU(degree=127) 
+
+        self.conv2 = on.Conv2d(Co, Co, kernel_size=3, stride=1, padding=1, bias=False)
+        self.bn2   = on.BatchNorm2d(Co)
+        self.htan2 = nn.Hardtanh()
+        self.act2  = on.SiLU(degree=127) 
+       
+        self.add = on.Add()
+        self.shortcut = nn.Sequential()
+        if stride != 1 or Ci != self.expansion*Co:
+            self.shortcut = nn.Sequential(
+                on.Conv2d(Ci, self.expansion*Co, kernel_size=1, stride=stride, bias=False),
+                on.BatchNorm2d(self.expansion*Co))
+  
+    def forward(self, x):
+        out = self.act1(self.htan1(self.bn1(self.conv1(x))))
+        out = self.bn2(self.conv2(out))
+        out = self.add(out, self.shortcut(x))
+        return self.htan2(self.act2(out))
+    
+
 
 class Bottleneck(on.Module):
     expansion = 4
@@ -94,7 +189,137 @@ class ResNet(on.Module):
     
     def forward(self, x):
         out = self.act(self.bn1(self.conv1(x)))
-        out = self.pool(out)
+        # out = self.pool(out)
+        for layer in self.layers:
+            out = layer(out)
+
+        out = self.avgpool(out)
+        out = self.flatten(out)
+        return self.linear(out)
+    
+
+class NoisyResNet(on.Module):
+    def __init__(self, dataset, block, num_blocks, num_chans, conv1_params, num_classes):
+        super().__init__()
+        self.in_chans = num_chans[0]
+        self.last_chans = num_chans[-1]
+
+        self.conv1 = on.Conv2d(3, self.in_chans, **conv1_params, bias=False)
+        self.bn1 = on.BatchNorm2d(self.in_chans)
+        self.act = on.ReLU()
+
+        self.pool = nn.Identity()
+        if dataset == 'imagenet': # for imagenet we must also downsample
+            self.pool = on.AvgPool2d(kernel_size=3, stride=2, padding=1)
+        
+        self.layers = nn.ModuleList()
+        for i in range(len(num_blocks)):
+            stride = 1 if i == 0 else 2
+            self.layers.append(self.layer(block, num_chans[i], num_blocks[i], stride))
+
+        self.avgpool = on.AdaptiveAvgPool2d(output_size=(1,1)) 
+        self.flatten = on.Flatten()
+        self.linear  = on.Linear(self.last_chans * block.expansion, num_classes)
+
+    def layer(self, block, chans, num_blocks, stride):
+        strides = [stride] + [1]*(num_blocks-1)
+        layers = []
+        for stride in strides:
+            layers.append(block(self.in_chans, chans, stride))
+            self.in_chans = chans * block.expansion
+        return nn.Sequential(*layers)
+    
+    def forward(self, x):
+        out = self.conv1(x) 
+        noise = torch.randn(out.shape).to(torch.device("mps")) * torch.std(out) * (1/16)
+        out = out + noise
+        out = self.act(self.bn1(out))
+        # out = self.pool(out)
+        for layer in self.layers:
+            out = layer(out)
+
+        out = self.avgpool(out)
+        out = self.flatten(out)
+        return self.linear(out)
+    
+
+
+class SiLUResNet(on.Module):
+    def __init__(self, dataset, block, num_blocks, num_chans, conv1_params, num_classes):
+        super().__init__()
+        self.in_chans = num_chans[0]
+        self.last_chans = num_chans[-1]
+
+        self.conv1 = on.Conv2d(3, self.in_chans, **conv1_params, bias=False)
+        self.bn1 = on.BatchNorm2d(self.in_chans)
+        self.act = on.SiLU(degree=127) 
+
+        self.pool = nn.Identity()
+        if dataset == 'imagenet': # for imagenet we must also downsample
+            self.pool = on.AvgPool2d(kernel_size=3, stride=2, padding=1)
+        
+        self.layers = nn.ModuleList()
+        for i in range(len(num_blocks)):
+            stride = 1 if i == 0 else 2
+            self.layers.append(self.layer(block, num_chans[i], num_blocks[i], stride))
+
+        self.avgpool = on.AdaptiveAvgPool2d(output_size=(1,1)) 
+        self.flatten = on.Flatten()
+        self.linear  = on.Linear(self.last_chans * block.expansion, num_classes)
+
+    def layer(self, block, chans, num_blocks, stride):
+        strides = [stride] + [1]*(num_blocks-1)
+        layers = []
+        for stride in strides:
+            layers.append(block(self.in_chans, chans, stride))
+            self.in_chans = chans * block.expansion
+        return nn.Sequential(*layers)
+    
+    def forward(self, x):
+        out = self.act(self.bn1(self.conv1(x)))
+        # out = self.pool(out)
+        for layer in self.layers:
+            out = layer(out)
+
+        out = self.avgpool(out)
+        out = self.flatten(out)
+        return self.linear(out)
+    
+class HtanSiLUResNet(on.Module):
+    def __init__(self, dataset, block, num_blocks, num_chans, conv1_params, num_classes):
+        super().__init__()
+        self.in_chans = num_chans[0]
+        self.last_chans = num_chans[-1]
+
+        self.conv1 = on.Conv2d(3, self.in_chans, **conv1_params, bias=False)
+        self.bn1 = on.BatchNorm2d(self.in_chans)
+        self.htan = nn.Hardtanh()
+        self.act = on.SiLU(degree=127) 
+
+        self.pool = nn.Identity()
+        if dataset == 'imagenet': # for imagenet we must also downsample
+            self.pool = on.AvgPool2d(kernel_size=3, stride=2, padding=1)
+        
+        self.layers = nn.ModuleList()
+        for i in range(len(num_blocks)):
+            stride = 1 if i == 0 else 2
+            self.layers.append(self.layer(block, num_chans[i], num_blocks[i], stride))
+
+        self.avgpool = on.AdaptiveAvgPool2d(output_size=(1,1)) 
+        self.flatten = on.Flatten()
+        self.linear  = on.Linear(self.last_chans * block.expansion, num_classes)
+
+    def layer(self, block, chans, num_blocks, stride):
+        strides = [stride] + [1]*(num_blocks-1)
+        layers = []
+        for stride in strides:
+            layers.append(block(self.in_chans, chans, stride))
+            self.in_chans = chans * block.expansion
+        return nn.Sequential(*layers)
+    
+    def forward(self, x):
+        out = self.act(self.htan(self.bn1(self.conv1(x))))
+        # out = self.pool(out)
         for layer in self.layers:
             out = layer(out)
 
@@ -110,6 +335,18 @@ class ResNet(on.Module):
 def ResNet20(dataset='cifar10'):
     conv1_params, num_classes = get_resnet_config(dataset)
     return ResNet(dataset, BasicBlock, [3,3,3], [16,32,64], conv1_params, num_classes)
+
+def NoisyResNet20(dataset='cifar10'):
+    conv1_params, num_classes = get_resnet_config(dataset)
+    return NoisyResNet(dataset, NoisyBasicBlock, [3,3,3], [16,32,64], conv1_params, num_classes)
+
+def SiLUResNet20(dataset='cifar10'):
+    conv1_params, num_classes = get_resnet_config(dataset)
+    return SiLUResNet(dataset, SiLUBasicBlock, [3,3,3], [16,32,64], conv1_params, num_classes)
+
+def HtanSiLUResNet20(dataset='cifar10'):
+    conv1_params, num_classes = get_resnet_config(dataset)
+    return HtanSiLUResNet(dataset, HtanSiLUBasicBlock, [3,3,3], [16,32,64], conv1_params, num_classes)
 
 def ResNet32(dataset='cifar10'):
     conv1_params, num_classes = get_resnet_config(dataset)
