@@ -1,0 +1,41 @@
+
+{1} Finding per-layer input/output ranges and shapes...
+
+{2} Fitting polynomials... P[0]
+Interval: [-1.000244140625, -0.015625000000] U [0.015625000000, 1.000244140625]
+Iteration:  0 - 36.671126371208
+Iteration:  1 - 1.604349827010
+Iteration:  2 - 0.067677182132
+Iteration:  3 - 0.000321111968
+MaxErr: 0.684720677007
+MinErr: 0.684500875584
+
+P[1]
+Interval: [-1.684964817632, -0.315254983791] U [0.315254983791, 1.684964817632]
+Iteration:  0 - 8.034689724788
+Iteration:  1 - 0.442923966627
+Iteration:  2 - 0.012446506932
+MaxErr: 0.024674913543
+MinErr: 0.024371572596
+
+P[2]
+Interval: [-1.024919054168, -0.975384286779] U [0.975384286779, 1.024919054168]
+Iteration:  0 - 1.787299755635
+Iteration:  1 - 0.214497956718
+Iteration:  2 - 0.002337390027
+MaxErr: 0.000000000000
+MinErr: 0.000000000000
+
+Output Precision: -76.440964
+
+done! [2.840 secs.]
+
+{3} Generating matrix diagonals...
+
+Packing conv1:
+├── embed method: hybrid
+├── original matrix shape: (16384, 3072)
+├── # blocks (rows, cols) = (1, 1)
+├── resized matrix shape: (16384, 16384)
+├── # output rotations: 0
+|    Processing blocks:   0%|          | 0/1 [00:00<?, ?it/s]
